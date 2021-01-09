@@ -21,12 +21,14 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
 
-// Tell the server to use the routs
+// Tell the server to use the routes
 const exercisesRouter = require('./routes/exercises')
 const usersRouter = require('./routes/users')
+const studySessionsRouter = require('./routes/studysessions')
 
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
+app.use('/studysessions', studySessionsRouter);
 
 
 // This is what starts the server
