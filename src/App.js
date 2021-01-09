@@ -10,6 +10,10 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import Visualization from "./components/visualization.component";
 
+import CreateStudySession from "./components/create-studysession.component";
+import StudySessionsList from "./components/studysessions-list.component";
+
+
 // Returns JSX which is loaded by index.js into the index.html
 function App() {
   return (
@@ -22,6 +26,8 @@ function App() {
           <Route path="/create" component={CreateExercise} />
           <Route path="/user" component={CreateUser} />
           <Route path="/viz" component={Visualization} />
+          <Route path="/createstudy" component={CreateStudySession} />
+          <Route path="/studylist" component={StudySessionsList} />
       </div>
     </Router>
   );

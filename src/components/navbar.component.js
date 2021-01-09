@@ -21,6 +21,12 @@ export default class Navbar extends Component {
                     <li className="navbar-item">
                     <Link to="/viz" className="nav-link">Visualization</Link>
                     </li>
+                    <li className="navbar-item">
+                    <Link to="/createstudy" className="nav-link">Create Study Session Log</Link>
+                    </li>
+                    <li className="navbar-item">
+                    <Link to="/studylist" className="nav-link">Study Sessions</Link>
+                    </li>
                 </ul>
                 </div>
             </nav>
